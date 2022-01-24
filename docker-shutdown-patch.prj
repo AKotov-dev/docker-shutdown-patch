@@ -1,0 +1,82 @@
+[NAME]
+name=docker-shutdown-patch
+
+[VERSION]
+version=0.1
+
+[RELEASE]
+release=0.mrx8
+
+[GROUP]
+group=Applications/File
+
+[DESCRIPTION]
+0=Docker shutdown patch for Mageia Linux
+1=---
+2=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2022
+
+[SUMMARY]
+summary=Docker shutdown patch for Mageia Linux
+
+[URLCOPY]
+urlcopy=no_ulr
+
+[LICENSE]
+license=GPLv3+
+
+[DEPS]
+deps=systemd
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=1
+
+[SIGN]
+sign=0
+
+[DEB]
+deb=0
+
+[FILES]
+0=/etc/systemd/system/docker.service
+1=/usr/share/doc/docker-shutdown-patch/
+
+[AFTERINSTALL]
+0=systemctl daemon-reload
+
+[AFTERREMOVE]
+0=systemctl daemon-reload
+
+[URL32]
+url32=no_url
+
+[URL64]
+url64=
+
+[PROGRAMNAME]
+programname=docker-shutdown-patch
+
+[DEVTOOL]
+devtool=Shell
+
+[TOOLVERSION]
+toolversion=unknown
+
+[INFO]
+0=docker-shutdown-patch
+1=---
+2=The patch fixes the problem of docker freezing when restarting or shutting down the computer when containers are running.
+3=
+4=Bug 29096 - Docker and systemd - failed to stop Failed with result 'timeout': https://bugs.mageia.org/show_bug.cgi?id=29096
+5=
+6=The package contains a fixed module: /etc/systemd/system/docker.service
+7=
+8=After installing the patch, restart your computer...
