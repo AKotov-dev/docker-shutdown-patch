@@ -25,13 +25,13 @@ vendor=alex_q_2000 (C) 2022
 summary=Docker shutdown patch for Mageia Linux
 
 [URLCOPY]
-urlcopy=no_ulr
+urlcopy=https://github.com/AKotov-dev/docker-shutdown-patch
 
 [LICENSE]
 license=GPLv3+
 
 [DEPS]
-deps=systemd
+deps=systemd docker
 
 [META]
 meta=0
@@ -56,7 +56,7 @@ deb=0
 0=systemctl daemon-reload
 
 [URL32]
-url32=no_url
+url32=https://github.com/AKotov-dev/docker-shutdown-patch
 
 [URL64]
 url64=

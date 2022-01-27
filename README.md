@@ -1,8 +1,10 @@
 # docker-shutdown-patch
 Mageia Bug 29096: https://bugs.mageia.org/show_bug.cgi?id=29096
 
-The package contains the modified file `/etc/systemd/system/docker.service`. Replacing the file fixed the docker freezes timeout error when restarting or shutting down the computer.
-
+The package contains the modified file `/etc/systemd/system/docker.service`. Replacing the file fixed the docker freezes timeout error when restarting or shutting down the computer.  
+  
+**Dependencies:** docker systemd
+  
 **Contents of the new file:**
 ```
 [Unit]
