@@ -5,7 +5,7 @@ The package contains the modified file `/etc/systemd/system/docker.service`. Rep
   
 **Dependencies:** docker systemd
   
-**Contents of the new file:**
+/etc/systemd/system/docker.service
 ```
 [Unit]
 Description=Docker Application Container Engine
